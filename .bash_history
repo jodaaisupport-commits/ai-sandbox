@@ -406,3 +406,35 @@ pwd
 # 3. Jetzt Ubuntu neu starten – OHNE verschachtelung
 proot-distro login ubuntu
 exit
+npm i -g neon@latest
+neon --version
+neon login
+neon link --project-id still-field-03608854 --branch production -y
+neon config init
+cd ai-sandbox
+proot-distro login ubuntu
+# In Ubuntu:
+cd /root/ai-sandbox-backend
+cat > package.json << 'EOF'
+{
+  "name": "ai-sandbox-backend",
+  "version": "4.2.0",
+  "scripts": { "dev": "next dev" },
+  "dependencies": {
+    "next": "14.2.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "@prisma/client": "5.13.0",
+    "bcryptjs": "2.4.3",
+    "jsonwebtoken": "9.0.2"
+  },
+  "devDependencies": { "prisma": "5.13.0" }
+}
+EOF
+
+# Jetzt git push – Vercel baut
+git init
+git remote add origin https://github.com/jodaaisupport-commits/ai-sandbox.git
+git add .
+git commit -m "fix: ubuntu build"
+git push origin main --force
