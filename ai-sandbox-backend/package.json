@@ -1,16 +1,13 @@
 {
   "name": "ai-sandbox-backend",
-  "version": "4.2.0",
-  "scripts": { "dev": "next dev", "build": "next build", "start": "next start" },
+  "scripts": { "dev": "next dev", "build": "prisma generate && next build", "start": "next start" },
   "dependencies": {
-    "next": "^14.2.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "@prisma/client": "^5.13.0",
-    "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.0.2"
+    "next": "14.2.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "@prisma/client": "5.13.0",
+    "bcryptjs": "2.4.3",
+    "jsonwebtoken": "9.0.2"
   },
-  "devDependencies": {
-    "prisma": "^5.13.0"
-  }
+  "devDependencies": { "prisma": "5.13.0" }
 }
