@@ -1,0 +1,27 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.20.0
+2 info using node@v26.4.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/ai-sandbox-backend/.npmrc
+5 silly config load:file:/data/data/com.termux/files/home/.npmrc
+6 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+7 verbose title npm install-scripts approve npm
+8 verbose argv "install-scripts" "approve" "npm"
+9 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-10-03T17_38_37_829Z-
+10 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-10-03T17_38_37_829Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:1040711680 maxSize:260177920 maxEntrySize:130088960
+13 verbose stack Error: No installed packages match: npm
+13 verbose stack     at InstallScripts.runPositional (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/utils/allow-scripts-cmd.js:202:9)
+13 verbose stack     at InstallScripts.runMode (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/utils/allow-scripts-cmd.js:129:17)
+13 verbose stack     at async Npm.exec (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/npm.js:193:9)
+13 verbose stack     at async module.exports (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/cli/entry.js:67:5)
+14 error code ENOMATCH
+15 error No installed packages match: npm
+16 verbose cwd /data/data/com.termux/files/home/ai-sandbox-backend
+17 verbose os Linux 6.6.89-android15-8-abA146PXXSJEZH6-4k
+18 verbose node v26.4.0
+19 verbose npm  v11.20.0
+20 verbose exit 1
+21 verbose code 1
+22 error A complete log of this run can be found in: /data/data/com.termux/files/home/.npm/_logs/2026-10-03T17_38_37_829Z-debug-0.log

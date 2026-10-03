@@ -1,0 +1,30 @@
+{
+  "last_reminder": 0,
+  "cached_at": 1791051291014,
+  "version": "5.22.0",
+  "cli_path": "/data/data/com.termux/files/home/ai-sandbox-backend/node_modules/.bin/prisma",
+  "output": {
+    "product": "prisma",
+    "previous_version": "5.22.0",
+    "checkpoint_version": 4,
+    "local_timestamp_without_timezone": "2026-10-03T20:14:49Z",
+    "current_version": "8.0.0-rc.19",
+    "current_release_date": 1790681153,
+    "client_event_id": "0a39149f-295e-4446-82d5-76065c483fa0",
+    "current_download_url": "https://github.com/prisma/prisma",
+    "package": "prisma",
+    "release_tag": "latest",
+    "install_command": "npm install --save-dev prisma",
+    "schema_providers": [
+      "postgresql"
+    ],
+    "schema_preview_features": [],
+    "schema_generators_providers": [
+      "prisma-client-js"
+    ],
+    "current_changelog_url": "https://github.com/prisma/prisma",
+    "outdated": true,
+    "project_website": "https://prisma.io",
+    "alerts": []
+  }
+}

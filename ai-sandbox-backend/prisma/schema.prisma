@@ -1,0 +1,45 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url = env("DATABASE_URL")
+}
+
+model User {
+  id String @id @default(cuid())
+  name String
+  email String @unique
+  password String
+  role String @default("user")
+  createdAt DateTime @default(now())
+  prompts Prompt[]
+  logs Log[]
+}
+
+model Prompt {
+  id String @id @default(cuid())
+  userId String
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title String
+  prompt String
+  createdAt DateTime @default(now())
+}
+
+model Log {
+  id String @id @default(cuid())
+  userId String?
+  user User? @relation(fields: [userId], references: [id])
+  action String
+  model String?
+  tokens Int?
+  createdAt DateTime @default(now())
+}
+
+model SystemSetting {
+  id String @id @default("global")
+  defaultModel String @default("Qwen3-235B-A22B-Instruct-2507-FP8")
+  pricingPer1M Float @default(0.0004)
+  updatedAt DateTime @updatedAt
+}

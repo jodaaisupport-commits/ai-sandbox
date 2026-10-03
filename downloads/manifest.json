@@ -1,0 +1,16 @@
+{
+  "name": "AI Sandbox Studio Pro v4.0.3",
+  "short_name": "AI Sandbox Pro",
+  "description": "Professionelle AI Studio Simulation - Prompt Lab, Arena, Neural Net, Diffusion, Fine-Tuning, Tokenizer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070a12",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>\u26a1</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
