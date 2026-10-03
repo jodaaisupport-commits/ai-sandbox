@@ -1,6 +1,6 @@
 [user]
-	name = jodaaisupport-commits
-	email = jodaaisupport@gmail.com
+	name = plauen
+	email = you@example.com
 [credential "https://github.com"]
 	helper = 
 	helper = !/data/data/com.termux/files/usr/bin/gh auth git-credential
